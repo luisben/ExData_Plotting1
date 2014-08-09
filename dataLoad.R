@@ -14,6 +14,7 @@ pw_data$timestamp <- as.POSIXlt(paste(pw_data$Date,pw_data$Time),format= timesta
 #convert to numeric, not done on file load as "?" characters gave problems
 pw_data$Global_active_power <- as.numeric(pw_data$Global_active_power)
 pw_data$Global_reactive_power <- as.numeric(pw_data$Global_reactive_power)
+pw_data$Voltage <- as.numeric(pw_data$Voltage)
 pw_data$Sub_metering_1 <- as.numeric(pw_data$Sub_metering_1)
 pw_data$Sub_metering_2 <- as.numeric(pw_data$Sub_metering_2)
 pw_data$Sub_metering_3 <- as.numeric(pw_data$Sub_metering_3)

@@ -8,6 +8,7 @@ Since these steps are needed in all scripts I decided to move it to a separate s
 For the scripts to run correctly it is needed to have the household_power_consumption.txt file and the dataLoad.R file in the working directory.
 In addition the myplots directory needs to be created manually in the working directory.
 
+The original datafile is not uploaded to the repository since it is too big and it is available from the assignment description page.
 
 ## Introduction
 
