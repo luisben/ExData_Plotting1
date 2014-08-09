@@ -1,0 +1,7 @@
+source("dataLoad.r")
+prev_locale <- Sys.getlocale(category = "LC_ALL")
+Sys.setlocale(category = "LC_ALL", locale = "C")
+png("myplots/plot2.png",width = 480, height = 480, units = "px")
+with(pw_data,plot(timestamp,Global_active_power,type = "l",xlab="",ylab="Global Active Power (kilowatts)"))
+dev.off()
+Sys.setlocale(category = "LC_ALL", locale = prev_locale)
